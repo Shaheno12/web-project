@@ -1,0 +1,320 @@
+<html lang="en">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCDS - E-Commerce</title>
+    <link rel="stylesheet" href="normalization.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="sw.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="nav">
+        <div class="container">
+            <div class="nav__main">
+                <div>
+                    <a href="/">
+                        <img src="assets/Logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="nav__buttons-mobile">
+                    <a href="/"><img src="assets/Contact.png" alt=""></a>
+                    <a href="/"><img src="assets/Cart.png" alt=""></a>
+                    <a href="/"><img src="assets/Search.png" alt=""></a>
+                    <a href="login.php"><img src="assets/Login.png" alt=""></a>
+                    <a href="/"><img src="assets/Like.png" alt=""></a>
+                </div>
+
+                <div class="nav__menu-open">
+                    <span></span>
+                </div>
+                <div class="nav__menu-overlay">
+                </div>
+
+                <!-- navigation menu start -->
+
+                <nav class="nav__menu">
+                    <div class="nav__menu-close">
+                        <img src="assets/close.png" alt="close">
+                    </div>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="/">Women</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/">Men</a>
+                        </li>
+                        <li class="nav__item nav__item-child">
+                            <a href="/" data-toggle="nav__dropdown">Collection <i
+                                    class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="nav__dropdown" style="z-index:9999;">
+                                <li class="nav__item"><a href="#">Winter</a></li>
+                                <li class="nav__item"><a href="#">Spring</a></li>
+                                <li class="nav__item"><a href="#">Summer</a></li>
+                                <li class="nav__item"><a href="#">Autumn</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item" style="margin-right:0px !important;">
+                            <a href="/">Outlet</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- navigation menu end -->
+                <div class="nav__buttons">
+                    <a href="/"><img src="assets/Contact.png" alt=""></a>
+                    <a href="/"><img src="assets/Cart.png" alt=""></a>
+                    <a href="/"><img src="assets/Search.png" alt=""></a>
+                    <a href="login.php"><img src="assets/Login.png" alt=""></a>
+                    <a href="/"><img src="assets/Like.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="checkout">
+    <h1 style="margin-top: 80px;">Checkout Page</h1>
+    <div class="tab_container">
+        <input id="tab1" type="radio" name="tabs" checked>
+        <label for="tab1"><span class="numberCircle">1</span><span>Cart</span></label>
+        <input id="tab4" type="radio" name="tabs">
+        <label for="tab4"><span class="numberCircle">4</span><span>Payment</span></label>
+
+        <section id="content1" class="tab-content">
+            <h3>Cart Items</h3>
+            <p></p>
+        </section>
+
+        <section id="content2" class="tab-content">
+            <h3>Customer Information</h3>
+            <p></p>
+        </section>
+
+        <section id="content3" class="tab-content">
+            <h3>Shipping</h3>
+            <p></p>
+        </section>
+
+        <section id="content4" class="tab-content">
+            <h4 class="payment-title">Choose your payment method</h4>
+            <form action="" method="post">
+                <div class="pymt-radio">
+
+
+                    <div class="row-payment-method payment-row">
+                        <div class="select-icon">
+                            <input type="radio" id="radio1" name="radios" value="pp">
+                            <label for="radio1"></label>
+                        </div>
+                        <div class="select-txt">
+                            <p class="pymt-type-name">Paypal</p>
+                            <p class="pymt-type-desc">Safe payment online. Credit card needed. PayPal account is not
+                                necessary.</p>
+                        </div>
+                        <div class="select-logo">
+                            <img src="https://www.dropbox.com/s/pycofx0gngss4ef/logo-paypal.png?raw=1" alt="PayPal" />
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="pymt-radio">
+
+                    <div class="row-payment-method payment-row-last">
+                        <div class="select-icon hr">
+                            <input type="radio" id="radio2" name="radios" value="pp" checked>
+                            <label for="radio2"></label>
+                        </div>
+                        <div class="select-txt hr">
+                            <p class="pymt-type-name">Credit Card</p>
+                            <p class="pymt-type-desc">Safe money transfer using your bank account. Safe payment online.
+                                Credit card needed. Visa, Maestro, Discover, American Express</p>
+                        </div>
+                        <div class="select-logo">
+                            <div class="select-logo-sub logo-spacer">
+                                <img src="https://www.dropbox.com/s/by52qpmkmcro92l/logo-visa.png?raw=1" alt="Visa" />
+                            </div>
+                            <div class="select-logo-sub">
+                                <img src="https://www.dropbox.com/s/6f5dorw54xomw7p/logo-mastercard.png?raw=1"
+                                    alt="MasterCard" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="form-cc">
+                    <div class="row-cc">
+                        <div class="cc-field">
+                            <div class="cc-title">Credit Card Number
+                            </div>
+                            <input type="text" class="input cc-txt text-validated" value="4542 9931 9292 2293" />
+                        </div>
+                    </div>
+                    <div class="row-cc">
+                        <div class="cc-field">
+                            <div class="cc-title">Expiry Date
+                            </div>
+                            <select class="input cc-ddl">
+                                <option selected>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                            <select class="input cc-ddl">
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option selected>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+                            </select>
+                        </div>
+                        <div class="cc-field">
+                            <div class="cc-title">CVV Code<span class="numberCircle">?</span>
+                            </div>
+                            <input type="text" class="input cc-txt" />
+                        </div>
+                    </div>
+                    <div class="row-cc">
+                        <div class="cc-field">
+                            <div class="cc-title">Name on Card
+                            </div>
+                            <input type="text" class="input cc-txt" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="button-master-container">
+                    <div class="button-container"><a href="#">Return to Shipping</a>
+                    </div>
+                    <div class="button-container button-finish"><a href="#">Finish Order</a>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <div class="">
+                        <h1 class="footer__header">Company Info</h1>
+                        <ul>
+                            <li class="footer__item"><a href="">About Us</a></li>
+                            <li class="footer__item"><a href="">Affliate</a></li>
+                            <li class="footer__item"><a href="">Fashion Blogger</a></li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <h1 class="footer__header">Help & Support</h1>
+                        <ul>
+                            <li class="footer__item"><a href="">Shipping Info</a></li>
+                            <li class="footer__item"><a href="">Refunds</a></li>
+                            <li class="footer__item"><a href="">How to Order</a></li>
+                            <li class="footer__item"><a href="">How to Track</a></li>
+                            <li class="footer__item"><a href="">Size Guides</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="">
+                        <h1 class="footer__header">Customer Care</h1>
+                        <ul>
+                            <li class="footer__item"><a href="">Contact Us</a></li>
+                            <li class="footer__item"><a href="">Payment Methods</a></li>
+                            <li class="footer__item"><a href="">Bonus Point</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-2">
+                    <h1 class="footer__header">Signup For The Latest News</h1>
+                    <form class="footer__form" action="">
+                        <input type="email" placeholder="Enter Email">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </form>
+                    <div class="footer__contact">
+                        <img src="assets/Mail.png" alt="">
+                        <h1>something@email.com</h1>
+                    </div>
+                    <div style="margin-bottom: 0 !important;" class="footer__contact">
+                        <img src="assets/Phone.png" alt="">
+                        <h1>+2321354524</h1>
+                    </div>
+
+                </div>
+            </div>
+            <div style="display:flex; gap:40px; justify-content: center; padding-bottom: 38px; margin-bottom: 17.5px; border-bottom: 1px solid #9E9E9E;"
+                class="">
+                <div>
+                    <img src="assets/facebook 1.png" alt="">
+                </div>
+                <div>
+                    <img src="assets/instagram 1.png" alt="">
+                </div>
+                <div>
+                    <img src="assets/youtube 1.png" alt="">
+                </div>
+                <div>
+                    <img src="assets/twitter 1.png" alt="">
+                </div>
+
+            </div>
+            <div class="footer__bottom">
+                <p>All rights Reserved &nbsp; <i class="fa-regular fa-copyright"></i><span> &nbsp; Your Company,
+                        2021</span></p>
+                <p>Made with ❤️ by<span> &nbsp;Zeyad Tharwat & Ahmed Maged</span></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/9d667afad8.js" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
+
+</html>
